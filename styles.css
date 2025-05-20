@@ -1,0 +1,241 @@
+/* مبادئ عامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Tajawal", sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    padding-bottom: 2rem;
+  }
+  body.dark-mode {
+    background-color: #2c2c2c;
+    color: #ddd;
+  }
+  
+  /* رأس الصفحة */
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+  }
+  body.dark-mode .site-header {
+    background-color: #444;
+    border-bottom-color: #555;
+  }
+  .site-header h1 {
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    color: #333;
+  }
+  body.dark-mode .site-header h1 {
+    color: #fff;
+  }
+  
+  /* زر الوضع الليلي */
+  .theme-toggle {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+  .theme-toggle:hover {
+    opacity: 0.8;
+  }
+  body.dark-mode .theme-toggle {
+    background-color: #222;
+    color: #ddd;
+  }
+  
+  /* شريط التنقل البسيط */
+  .top-nav {
+    text-align: center;
+    margin: 0.5rem;
+  }
+  .top-nav a {
+    margin: 0 0.5rem;
+    color: #666;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+  }
+  .top-nav a.active-page {
+    color: #000;
+    border-bottom-color: #333;
+  }
+  body.dark-mode .top-nav a {
+    color: #bbb;
+  }
+  body.dark-mode .top-nav a.active-page {
+    color: #fff;
+    border-bottom-color: #fff;
+  }
+  
+  /* نص توضيحي */
+  .intro-text {
+    max-width: 800px;
+    margin: 1rem auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    color: #555;
+  }
+  body.dark-mode .intro-text {
+    color: #bbb;
+  }
+  
+  /* كارت الذكر */
+  .dhikr-card {
+    background-color: #fff;
+    margin: 1rem auto;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 1rem;
+    transition: background-color 0.3s;
+  }
+  body.dark-mode .dhikr-card {
+    background-color: #3b3b3b;
+    box-shadow: none;
+  }
+  
+  /* محتوى الذكر */
+  .dhikr-content {
+    flex: 1;
+    margin-left: 1rem;
+  }
+  .dhikr-content h2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  body.dark-mode .dhikr-content h2 {
+    color: #eee;
+  }
+  .dhikr-content p, .dhikr-content blockquote {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  body.dark-mode .dhikr-content p,
+  body.dark-mode .dhikr-content blockquote {
+    color: #ccc;
+  }
+  blockquote {
+    border-right: 4px solid #ccc;
+    padding-right: 8px;
+  }
+  body.dark-mode blockquote {
+    border-right-color: #666;
+  }
+  /* صورة الآية */
+  .quran-img {
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+  }
+  body.dark-mode .quran-img {
+    border-color: #555;
+  }
+  
+  /* قسم العدّاد */
+  .counter-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    gap: 0.5rem;
+  }
+  .counter-box {
+    width: 50px;
+    height: 60px;
+    background-color: #4691e6;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+  .counter-box:hover {
+    opacity: 0.8;
+  }
+  .count-value {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    font-family: monospace;
+  }
+  .reset-btn {
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #999;
+    transition: transform 0.2s, color 0.2s;
+  }
+  .reset-btn:hover {
+    transform: rotate(15deg);
+    color: #444;
+  }
+  body.dark-mode .reset-btn {
+    color: #ccc;
+  }
+  body.dark-mode .reset-btn:hover {
+    color: #fff;
+  }
+  
+  /* Footer section */
+  .footer-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    line-height: 1.6;
+    color: #555;
+  }
+  body.dark-mode .footer-section {
+    color: #ccc;
+  }
+  .footer-section hr {
+    margin: 1rem 0;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  body.dark-mode .footer-section hr {
+    border-top-color: #666;
+  }
+  .footer-section ol {
+    margin-top: 0.5rem;
+    padding-right: 1.5rem;
+    list-style: decimal;
+  }
+  
+  /* استجابة للشاشات الصغيرة */
+  @media (max-width: 600px) {
+    .dhikr-card {
+      flex-direction: column;
+      padding: 1rem;
+    }
+    .dhikr-content {
+      margin-left: 0;
+      margin-bottom: 1rem;
+    }
+    .counter-section {
+      flex-direction: row;
+      align-self: center;
+    }
+  }
+  
