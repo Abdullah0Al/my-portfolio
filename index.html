@@ -2,249 +2,659 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Abdullah's Portfolio" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abdullah's Portfolio</title>
-  <!-- Google Font -->
+  <meta name="description" content="Abdullah Ibrahim Alasqah - AI Engineer & Data Scientist specializing in ML, NLP, and Computer Vision. KSU Graduate | Tuwaiq Academy Alumni" />
+  <meta name="keywords" content="AI Engineer, Data Scientist, Machine Learning, NLP, Computer Vision, Saudi Arabia, Riyadh" />
+  <meta name="author" content="Abdullah Ibrahim Alasqah" />
+  <title>Abdullah Alasqah | AI Engineer & Data Scientist</title>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-    rel="stylesheet"
-  />
-  <!-- External CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Portfolio Styles -->
+  <link rel="stylesheet" href="portfolio.css" />
 </head>
 <body>
-  <!-- Header / Navbar -->
-  <header class="navbar">
-    <div class="nav-container">
-      <div class="logo">Abdullah</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#cv">CV</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#social">Social</a></li>
-          <li><a href="morning.html">Athkar</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <!-- Hero / Introduction -->
-  <section id="home" class="hero-section">
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Abdullah<span>.ai</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
     <div class="hero-content">
-      <h1>Welcome to My Portfolio</h1>
-      <p>
-        Hello! I’m <strong>Abdullah</strong>, a Computer Science student at
-        <strong>KSU</strong> with a passion for coding, problem-solving, and
-        continuous learning. Throughout my studies, I’ve worked on various
-        projects that showcase my skills in software engineering, AI, and other
-        fields. I’m excited to soon embark on a professional career in tech, and
-        I look forward to tackling new challenges and expanding my expertise.
+      <!-- TODO: Replace with your professional photo -->
+      <img src="assets/photoGG.jpg" alt="Abdullah Alasqah" class="hero-image" onerror="this.src='https://via.placeholder.com/180/3498DB/FFFFFF?text=AA'" />
+
+      <h1>Abdullah Ibrahim Alasqah</h1>
+      <div class="hero-title">AI Engineer | Data Scientist</div>
+      <p class="hero-tagline">
+        CS Graduate from KSU | Tuwaiq Academy Alumni<br/>
+        Specializing in ML, NLP & Computer Vision
       </p>
+
+      <div class="hero-contact">
+        <a href="mailto:AlasqahAi@gmail.com">
+          <i class="fas fa-envelope"></i> AlasqahAi@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/abdullah-a-33465826a/" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/Abdullah92o" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="#contact">
+          <i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia
+        </a>
+      </div>
+
+      <a href="#projects" class="cta-button">
+        <i class="fas fa-code"></i> View Projects
+      </a>
     </div>
   </section>
 
-  <!-- CV Section (with Picture) -->
-  <section id="cv" class="section">
-    <h2>My CV</h2>
-    <div class="cv-container">
-        <img src="assets/photoGG.jpg" alt="My Photo" style="width:200px;height:auto;" />
-        <p>
-          Download my 
-          <a href="assets/Abdullah_ResumeF.pdf" target="_blank" rel="noopener">CV (PDF)</a>
-        </p>
-      <div class="cv-details">
-        <h3>Abdullah</h3>
-        <p>
-          I am a final-term Computer Science student at KSU, specializing in
-          software development and eager to expand my technical abilities. This
-          CV highlights my academic journey, key achievements, and relevant
-          skills gained throughout my program.
-        </p>
-        <!-- Add more detailed CV info here if desired -->
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <p>
+        Computer Science graduate with honors (GPA 4.54/5.0) from King Saud University,
+        specializing in AI-driven solutions. Experienced in delivering impactful ML projects
+        across banking, healthcare, and sports analytics. Completed intensive AI training at
+        Tuwaiq Academy and currently in Graduate Development Program at Saudi Investment Bank,
+        rotating through Data Science, Cybersecurity, and IT departments.
+      </p>
+    </div>
+
+    <div class="highlights-grid">
+      <div class="highlight-card">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>Excellent Grade with Honors</h3>
+        <p>Graduated from King Saud University with 4.54/5.0 GPA, recognized on Dean's List</p>
+      </div>
+      <div class="highlight-card">
+        <i class="fas fa-robot"></i>
+        <h3>Tuwaiq Academy Graduate</h3>
+        <p>Completed intensive AI Bootcamp focused on Deep Learning, Neural Networks, and Production ML</p>
+      </div>
+      <div class="highlight-card">
+        <i class="fas fa-briefcase"></i>
+        <h3>Banking Sector Experience</h3>
+        <p>Graduate Development Program at SAIB + Data Science expertise at leading Saudi banks</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <h2 class="section-title">Professional Experience</h2>
+    <div class="section-subtitle">Driving innovation in banking and technology</div>
+
+    <div class="timeline">
+      <div class="timeline-item current">
+        <div class="timeline-badge"></div>
+        <div class="timeline-content">
+          <div class="experience-header">
+            <h3 class="experience-title">Graduate Development Program (GDP) - Tech Track</h3>
+            <div class="experience-company">Saudi Investment Bank (SAIB)</div>
+            <div class="experience-date">November 2025 - Present</div>
+          </div>
+          <p class="experience-description">
+            Rotating through Data Science, Cyber Security, and IT departments as part of structured
+            2-year graduate development program. Gaining hands-on experience in banking data analytics,
+            AI/ML applications, cybersecurity operations, and digital transformation initiatives.
+          </p>
+          <ul class="experience-achievements">
+            <li>Rotating across data analytics, cyber security, and IT infrastructure teams</li>
+            <li>Working with banking data and customer analytics systems</li>
+            <li>Exposure to AI/ML applications in financial services</li>
+            <li>Contributing to digital transformation projects</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-badge"></div>
+        <div class="timeline-content">
+          <div class="experience-header">
+            <h3 class="experience-title">System Analyst</h3>
+            <div class="experience-company">Alinma Bank - IT Planning Department</div>
+            <div class="experience-date">October 2025 - November 2025</div>
+          </div>
+          <p class="experience-description">
+            IT strategic planning and digital transformation initiatives. Professional transition
+            to structured Graduate Development Program.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-badge"></div>
+        <div class="timeline-content">
+          <div class="experience-header">
+            <h3 class="experience-title">Data Science Intern</h3>
+            <div class="experience-company">Riyad Bank - Center of Intelligence</div>
+            <div class="experience-date">June 2025 - September 2025</div>
+          </div>
+          <ul class="experience-achievements">
+            <li>Developed customer segmentation model for ~1M clients using SAS and DataRobot</li>
+            <li>Built merchant categorization system achieving 80% precision accuracy</li>
+            <li>Created Power BI dashboards serving 100+ stakeholders across departments</li>
+            <li>Collaborated with cross-functional teams on data-driven decision making initiatives</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
   <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Murabi (Graduation Project)</h3>
-      <p>
-        Murabi is a digital resource planning solution that simplifies livestock
-        management for breeders and farm owners. By centralizing health records,
-        breeding histories, and financial transactions, it enhances operational
-        efficiency and data accuracy. Real-time alerts and analytics support
-        data-driven decisions, leading to improved productivity and
-        sustainability in animal farming.
-      </p>
-    </div>
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="section-subtitle">Innovative AI solutions across multiple domains</div>
 
-    <div class="project-card">
-      <h3>Supermarket Management Application</h3>
-      <p>
-        Developed a Swing-based Java application (using Eclipse and MySQL
-        Connector/J) to streamline supermarket operations. The system enables
-        managers to efficiently handle supplier relationships, track inventory
-        across multiple warehouses, and manage orders. Emphasizing
-        user-friendliness, security, and compliance, it provides accurate data
-        and secure transactions for day-to-day supermarket management.
-      </p>
-    </div>
-  </section>
+    <div class="projects-grid">
+      <!-- Project 1: MANARAH -->
+      <div class="project-card featured">
+        <div class="project-header">
+          <span class="featured-badge">
+            <i class="fas fa-star"></i> Featured
+          </span>
+          <h3 class="project-title">MANARAH</h3>
+          <div class="project-meta">AI Content Moderation System</div>
+        </div>
+        <div class="project-body">
+          <p class="project-description">
+            Multi-modal AI system for Saudi social media policy compliance. Analyzes images,
+            videos, and audio to detect policy violations automatically, ensuring content aligns
+            with local regulations and cultural standards.
+          </p>
 
-  <!-- Volunteer & Extracurricular Experience -->
-  <section id="experience" class="section">
-    <h2>Volunteer & Extracurricular Experience</h2>
-    <div class="experience-item">
-      <h4>Cyber Security Club (KSU) – One Term</h4>
-      <p>
-        Participated in weekly discussions, attended cybersecurity awareness
-        events, and collaborated with peers to explore fundamental security
-        principles and practices.
-      </p>
-    </div>
-    <div class="experience-item">
-      <h4>Social Culture Club of Computer Science (KSU) – Last Year</h4>
-      <p>
-        Volunteered as part of a student-led team, organizing social events and
-        workshops to foster a positive, inclusive culture. This involvement
-        sharpened my communication and teamwork skills while building strong
-        connections with fellow CS students.
-      </p>
+          <div class="tech-stack">
+            <span class="tech-tag">Vision-Language Models</span>
+            <span class="tech-tag">LLMs</span>
+            <span class="tech-tag">Speech-to-Text</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">FastAPI</span>
+          </div>
+
+          <ul class="project-highlights">
+            <li>Multi-modal AI integration (vision + language + audio)</li>
+            <li>Saudi media policy compliance automation</li>
+            <li>Real-world application for content moderation</li>
+            <li>Built during Tuwaiq Academy intensive bootcamp</li>
+          </ul>
+
+          <div class="project-links">
+            <!-- TODO: Add your GitHub repository link -->
+            <a href="#" class="project-link github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <!-- TODO: Add demo video link -->
+            <a href="#" class="project-link demo">
+              <i class="fas fa-play-circle"></i> Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: SCOUTAI -->
+      <div class="project-card featured">
+        <div class="project-header">
+          <span class="featured-badge">
+            <i class="fas fa-star"></i> Featured
+          </span>
+          <h3 class="project-title">SCOUTAI</h3>
+          <div class="project-meta">Football Player Analytics Platform</div>
+        </div>
+        <div class="project-body">
+          <p class="project-description">
+            Interactive ML application analyzing 2,800+ players from top 5 leagues to identify
+            stylistically similar alternatives for scouting and transfer decisions. Uses advanced
+            clustering algorithms and position-specific metrics.
+          </p>
+
+          <div class="tech-stack">
+            <span class="tech-tag">Machine Learning</span>
+            <span class="tech-tag">Clustering</span>
+            <span class="tech-tag">Streamlit</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Pandas</span>
+          </div>
+
+          <ul class="project-highlights">
+            <li>2,800+ player database across top 5 leagues</li>
+            <li>Position-specific weighted scoring system</li>
+            <li>Similarity matching for scouting decisions</li>
+            <li>Data-driven transfer market insights</li>
+          </ul>
+
+          <div class="project-links">
+            <!-- TODO: Add your GitHub repository link -->
+            <a href="#" class="project-link github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <!-- TODO: Add live demo link -->
+            <a href="#" class="project-link demo">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Saudi Sign Language -->
+      <div class="project-card">
+        <div class="project-header">
+          <h3 class="project-title">Saudi Sign Language Translation</h3>
+          <div class="project-meta">Accessibility & Social Impact</div>
+        </div>
+        <div class="project-body">
+          <p class="project-description">
+            Real-time Arabic sign language recognition system for deaf community accessibility.
+            Uses computer vision and LSTM networks to translate sign language gestures into text.
+          </p>
+
+          <div class="tech-stack">
+            <span class="tech-tag">MediaPipe</span>
+            <span class="tech-tag">LSTM</span>
+            <span class="tech-tag">Computer Vision</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">Python</span>
+          </div>
+
+          <ul class="project-highlights">
+            <li>Real-time gesture recognition</li>
+            <li>LSTM-based sequence modeling</li>
+            <li>Accessibility tool for Saudi deaf community</li>
+            <li>Arabic sign language focus</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="#" class="project-link github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="#" class="project-link demo">
+              <i class="fas fa-play-circle"></i> Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: Job Skills Recommender -->
+      <div class="project-card">
+        <div class="project-header">
+          <h3 class="project-title">Job Skills Recommender</h3>
+          <div class="project-meta">NLP & HR Tech</div>
+        </div>
+        <div class="project-body">
+          <p class="project-description">
+            NLP-based system that extracts and classifies required skills (soft + technical) from
+            job descriptions. Helps job seekers understand skill requirements and prepare accordingly.
+          </p>
+
+          <div class="tech-stack">
+            <span class="tech-tag">NLP</span>
+            <span class="tech-tag">Text Classification</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Scikit-learn</span>
+          </div>
+
+          <ul class="project-highlights">
+            <li>Automated skill extraction from job posts</li>
+            <li>Classification of soft vs technical skills</li>
+            <li>HR Tech / Recruitment automation</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="#" class="project-link github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5: Brain MRI Detection -->
+      <div class="project-card">
+        <div class="project-header">
+          <h3 class="project-title">Brain MRI Tumor Detection</h3>
+          <div class="project-meta">Medical AI | Award Winning</div>
+        </div>
+        <div class="project-body">
+          <p class="project-description">
+            Medical imaging AI model for automated brain tumor detection and segmentation.
+            Achieved 97% accuracy and 0.87 Dice score. Won Best Student Project Award (2023).
+          </p>
+
+          <div class="tech-stack">
+            <span class="tech-tag">CNN</span>
+            <span class="tech-tag">U-Net</span>
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">Medical Imaging</span>
+          </div>
+
+          <ul class="project-highlights">
+            <li>97% accuracy, 0.87 Dice score</li>
+            <li>Best Student Project Award (2023)</li>
+            <li>Enhancing medical diagnosis reliability</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="#" class="project-link github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Skills Section -->
   <section id="skills" class="section">
-    <h2>Skills</h2>
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="section-subtitle">Proficient in cutting-edge AI/ML technologies</div>
 
-    <h3>Programming & Software Development</h3>
-    <ul>
-      <li>Proficient in C/C++ and Java fundamentals</li>
-      <li>Experienced in Data Structures and OOP</li>
-      <li>Familiar with Parallel Processing concepts</li>
-    </ul>
+    <div class="skills-container">
+      <div class="skill-category">
+        <h3 class="skill-category-title">Programming Languages</h3>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <span class="skill-name">Python</span>
+            <span class="skill-level">★★★★★</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">SQL</span>
+            <span class="skill-level">★★★★☆</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Java</span>
+            <span class="skill-level">★★★☆☆</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">C/C++</span>
+            <span class="skill-level">★★★☆☆</span>
+          </div>
+        </div>
+      </div>
 
-    <h3>Algorithms & Theoretical Foundations</h3>
-    <ul>
-      <li>Design & Analysis of Algorithms, Theory of Computation</li>
-      <li>Strong math background (Discrete Math, Linear Algebra, Calculus)</li>
-    </ul>
+      <div class="skill-category">
+        <h3 class="skill-category-title">ML/AI Frameworks & Libraries</h3>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <span class="skill-name">TensorFlow</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Keras</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">PyTorch</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Scikit-learn</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">OpenCV</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">MediaPipe</span>
+          </div>
+        </div>
+      </div>
 
-    <h3>Systems & Architecture</h3>
-    <ul>
-      <li>Operating Systems concepts and design</li>
-      <li>Computer Organization & low-level system fundamentals</li>
-    </ul>
+      <div class="skill-category">
+        <h3 class="skill-category-title">Data Science & Analytics</h3>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <span class="skill-name">SAS</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">DataRobot</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Power BI</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Pandas</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">NumPy</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Streamlit</span>
+          </div>
+        </div>
+      </div>
 
-    <h3>Data & Databases</h3>
-    <ul>
-      <li>Fundamentals of Database Systems (MySQL)</li>
-      <li>Information Retrieval, Data Mining (basic exposure)</li>
-    </ul>
+      <div class="skill-category">
+        <h3 class="skill-category-title">Databases & DevOps</h3>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <span class="skill-name">MySQL</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">PostgreSQL</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">MongoDB</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Oracle</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Docker</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">FastAPI</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Django</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Git</span>
+          </div>
+        </div>
+      </div>
 
-    <h3>Networking & Security</h3>
-    <ul>
-      <li>Computer Networks (TCP/IP stack, protocols)</li>
-      <li>Computer Security fundamentals (threat models, defense)</li>
-    </ul>
+      <div class="skill-category">
+        <h3 class="skill-category-title">Domain Expertise</h3>
+        <div class="domains-grid">
+          <div class="domain-tag">Machine Learning & Deep Learning</div>
+          <div class="domain-tag">Computer Vision</div>
+          <div class="domain-tag">Natural Language Processing</div>
+          <div class="domain-tag">Multi-modal AI Systems</div>
+          <div class="domain-tag">Data Science & Analytics</div>
+          <div class="domain-tag">Banking & Finance</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <h3>AI & Advanced Topics</h3>
-    <ul>
-      <li>Intro to AI (search algorithms, basic ML)</li>
-      <li>Digital Image Processing techniques</li>
-    </ul>
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <h2 class="section-title">Education & Training</h2>
+    <div class="section-subtitle">Academic excellence and specialized AI training</div>
 
-    <h3>Software Engineering & Analysis</h3>
-    <ul>
-      <li>Systems Analysis & Design, SDLC</li>
-      <li>Ethical Issues in Computing & Research Methods</li>
-    </ul>
+    <div class="education-grid">
+      <div class="education-card">
+        <div class="education-icon">
+          <i class="fas fa-university"></i>
+        </div>
+        <h3 class="education-degree">B.Sc. Computer Science</h3>
+        <div class="education-institution">King Saud University</div>
+        <div class="education-date">Graduated: August 2025</div>
+        <div class="education-details">
+          <span class="gpa-badge">GPA: 4.54/5.0 - Excellent with Honors</span>
+          <p style="margin-top: 1rem;">
+            Graduation Project mentored by Dr. Mohammed Al-Salmi.
+            Recognized on Dean's List (2022-2023).
+          </p>
+        </div>
+      </div>
 
-    <h3>Web & Internet Technologies</h3>
-    <ul>
-      <li>HTML, CSS, JavaScript fundamentals</li>
-      <li>Basic hosting and server configurations</li>
-    </ul>
+      <div class="education-card">
+        <div class="education-icon">
+          <i class="fas fa-brain"></i>
+        </div>
+        <h3 class="education-degree">Building AI Models Program</h3>
+        <div class="education-institution">Tuwaiq Academy</div>
+        <div class="education-date">August 2025 - October 2025</div>
+        <div class="education-details">
+          <p>
+            Intensive bootcamp focused on Deep Learning, Neural Networks, and Production ML.
+            Developed MANARAH multi-modal AI system as capstone project.
+          </p>
+        </div>
+      </div>
 
-    <h3>Additional Skills</h3>
-    <ul>
-      <li>Computer Arabization</li>
-      <li>Professional Ethics & Communication</li>
-    </ul>
+      <div class="education-card">
+        <div class="education-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <h3 class="education-degree">AI Fundamentals</h3>
+        <div class="education-institution">Samsung Innovation Campus (MISK)</div>
+        <div class="education-date">July 2025 - September 2025</div>
+        <div class="education-details">
+          <p>
+            Comprehensive training in AI fundamentals and real-world applications.
+            Sponsored by MISK Foundation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="section">
+    <h2 class="section-title">Achievements & Recognition</h2>
+
+    <div class="achievements-grid">
+      <div class="achievement-item">
+        <div class="achievement-icon">🏆</div>
+        <div class="achievement-content">
+          <div class="achievement-title">Best Student Project Award (2023)</div>
+          <div class="achievement-description">
+            ML Medical Solution - Brain MRI Tumor Detection
+          </div>
+        </div>
+      </div>
+
+      <div class="achievement-item">
+        <div class="achievement-icon">📜</div>
+        <div class="achievement-content">
+          <div class="achievement-title">Dean's List (2022-2023)</div>
+          <div class="achievement-description">
+            King Saud University - Academic Excellence Recognition
+          </div>
+        </div>
+      </div>
+
+      <div class="achievement-item">
+        <div class="achievement-icon">🎖️</div>
+        <div class="achievement-content">
+          <div class="achievement-title">Al-Thakir Award</div>
+          <div class="achievement-description">
+            Academic Excellence Award - 6 consecutive years
+          </div>
+        </div>
+      </div>
+
+      <div class="achievement-item">
+        <div class="achievement-icon">👥</div>
+        <div class="achievement-content">
+          <div class="achievement-title">Cyber Security Club Leadership</div>
+          <div class="achievement-description">
+            Led cybersecurity workshops at KSU Cyber Security Club
+          </div>
+        </div>
+      </div>
+
+      <div class="achievement-item">
+        <div class="achievement-icon">🎪</div>
+        <div class="achievement-content">
+          <div class="achievement-title">Event Organizer</div>
+          <div class="achievement-description">
+            Organized tech events for 50+ students at KSU Social Culture Club
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <p>
-      <strong>Email:</strong>
-      <a href="mailto:Abdullahvc@icloud.com">Abdullahvc@icloud.com</a>
-    </p>
-  </section>
+    <h2 class="section-title">Get In Touch</h2>
 
-  <!-- Social Profiles Section -->
-  <section id="social" class="section">
-    <h2>Social Profiles</h2>
-    <div class="social-container">
-      <a
-        href="https://www.linkedin.com/in/abdullah-a-33465826a/"
-        target="_blank"
-        class="social-link"
-      >
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
-          alt="LinkedIn Icon"
-          class="social-icon"
-        />
-        <span>LinkedIn</span>
-      </a>
-      <a
-        href="https://github.com/Abdullah92o"
-        target="_blank"
-        class="social-link"
-      >
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-          alt="GitHub Icon"
-          class="social-icon"
-        />
-        <span>GitHub</span>
-      </a>
+    <div class="contact-content">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:AlasqahAi@gmail.com">AlasqahAi@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Riyadh, Saudi Arabia</span>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <a href="https://linkedin.com/in/abdullah-a-33465826a/" target="_blank" rel="noopener">LinkedIn Profile</a>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-github"></i>
+          <a href="https://github.com/Abdullah92o" target="_blank" rel="noopener">GitHub Profile</a>
+        </div>
+      </div>
+
+      <div class="contact-cta">
+        <h3>Open to Opportunities</h3>
+        <p>
+          I'm actively seeking AI/ML engineering roles and exciting collaborations.
+          Let's connect and discuss how we can work together!
+        </p>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 Abdullah</p>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-socials">
+        <a href="https://github.com/Abdullah92o" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/abdullah-a-33465826a/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:AlasqahAi@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+      <p>&copy; 2025 Abdullah Ibrahim Alasqah. All rights reserved.</p>
+      <p style="margin-top: 0.5rem; opacity: 0.7; font-size: 0.9rem;">
+        Built with passion for AI and innovation
+      </p>
+    </div>
   </footer>
 
-  <!-- Optional Smooth Scroll Script -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const navLinks = document.querySelectorAll('.nav-links a');
+  <!-- JavaScript -->
+  <script src="portfolio.js"></script>
 
-      navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          const targetId = link.getAttribute('href').substring(1);
-          const targetEl = document.getElementById(targetId);
-
-          window.scrollTo({
-            top: targetEl.offsetTop - 80,  // offset for fixed nav
-            behavior: 'smooth'
-          });
-        });
-      });
-    });
-  </script>
 </body>
 </html>
